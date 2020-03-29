@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Theology Blog</title>
+        {% else %}
+        <title>Welcome to the Theology Blog</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Theology Blog: <a href="/index">Home</a>!</div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
