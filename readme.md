@@ -11,3 +11,5 @@ Generate Migration Files: flask db migrate -m "<Note Here>"
 Update the Database: flask db upgrade/downgrade
 Db Session Commands: db.session.add() db.session.delete() db.session.commit() db.session.commit()
 Db Retrieval Commands: <Model>.query.all() <Model>.query.get(1)
+
+Test smtp server: python -m smtpd -n -c DebuggingServer localhost:8025
