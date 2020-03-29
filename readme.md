@@ -1,9 +1,13 @@
-This is a readme. You have had enough now. Get on with it.
-
 To run this service:
 
+1. Start the virtual environment: venv\Scripts\activate
+2. To start local test server run the command: flask run
+3. (Not yet implemented) To run the unit tests, run: python -m unittest tests\tests.py
+4. To start the shell environment: flask shell
 
-Run the following command to start the service: flask run
-
-To run the unit tests, run: python -m unittest tests\tests.py
-
+OTHER NOTES:
+Log Into SQL Database: C:\xampp\mysql\bin\mysql.exe -u root -p <password>
+Generate Migration Files: flask db migrate -m "<Note Here>"
+Update the Database: flask db upgrade/downgrade
+Db Session Commands: db.session.add() db.session.delete() db.session.commit() db.session.commit()
+Db Retrieval Commands: <Model>.query.all() <Model>.query.get(1)
